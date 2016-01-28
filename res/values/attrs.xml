@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItemCheckView">
+        <attr name="Title" format="string"></attr>
+        <attr name="DescOn" format="string"></attr>
+        <attr name="DescOff" format="string"></attr>    
+    </declare-styleable>
+</resources>

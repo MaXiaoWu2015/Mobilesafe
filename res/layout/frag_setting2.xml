@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:xiaowu="http://schemas.android.com/apk/res/com.matingting.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+  <TextView 
+      style="@style/TitleStyle"
+      android:text="2.手机卡绑定"
+     />
+   <TextView
+        style="@style/frag_setting1_text_style"
+        android:text="通过绑定SIM卡:" 
+         android:padding="5dp"/>
+
+    <TextView
+        style="@style/frag_setting1_text_style"
+        android:text="下次重启手机如果发现SIM卡变化" 
+         android:padding="5dp"/>
+
+    <TextView
+        style="@style/frag_setting1_text_style"
+        android:text="就会发送报警短信"
+         android:padding="5dp" />
+    <com.matingting.mobilesafe.view.SettingItemCheckView 
+        android:id="@+id/SIM_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xiaowu:Title="点击绑定sim卡"
+        xiaowu:DescOn="sim卡已经绑定"
+        xiaowu:DescOff="sim卡没有绑定"
+        ></com.matingting.mobilesafe.view.SettingItemCheckView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bind" />
+
+        <Button 
+            android:id="@+id/frag_setting2_nextbtn"
+            style="@style/frag_setting1_nextbtn_style" />
+
+        <Button 
+            android:id="@+id/frag_setting2_prebtn"
+            style="@style/frag_setting_prebtn_style" />
+    </RelativeLayout>
+</LinearLayout>

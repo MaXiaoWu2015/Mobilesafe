@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:xiaowu="http://schemas.android.com/apk/res/com.matingting.mobilesafe"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+    
+ <TextView
+        style="@style/TitleStyle"
+        android:text="设置中心" 
+/>
+
+   <com.matingting.mobilesafe.view.SettingItemCheckView
+       android:id="@+id/rl_SettingItem1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       xiaowu:Title="设置是否检测自动更新"
+       xiaowu:DescOn="自动检查更新已打开"
+       xiaowu:DescOff="自动检查更新已关闭" >   
+   </com.matingting.mobilesafe.view.SettingItemCheckView>
+   
+   <com.matingting.mobilesafe.view.SettingItemCheckView
+       android:id="@+id/rl_SettingItem2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       xiaowu:Title="电话归属地显示设置"
+       xiaowu:DescOn="电话归属地显示打开"
+       xiaowu:DescOff="电话归属地显示关闭" >   
+   </com.matingting.mobilesafe.view.SettingItemCheckView>
+   
+   <com.matingting.mobilesafe.view.SettingItemClickView
+       android:id="@+id/rl_SettingItem3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       xiaowu:Title="设置来电提醒样式"
+       xiaowu:DescOn="默认" >   
+   </com.matingting.mobilesafe.view.SettingItemClickView>
+</LinearLayout>

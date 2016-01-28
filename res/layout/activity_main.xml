@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.matingting.mobilesafe.MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tltle_green"
+        android:text="功能列表" 
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="有了手机卫士, 腰不酸了,腿不疼了,走路也有劲了, 手机卫士太NB了"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+    <GridView 
+        android:id="@+id/gv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"
+        ></GridView>
+
+</LinearLayout>

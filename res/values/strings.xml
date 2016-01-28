@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MobileSafe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="UpdateNow">马上更新</string>
+    <string name="DelayNext">下次再说</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_phone_security">PhoneSecurityActivity</string>
+    <string name="title_activity_security_setting_completed">SecuritySettingCompletedActivity</string>
+    <string name="title_activity_advanced_tools">AdvancedToolsActivity</string>
+    <string name="title_activity_address_search">AddressSearchActivity</string>
+
+</resources>
