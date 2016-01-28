@@ -37,4 +37,13 @@
        xiaowu:Title="设置来电提醒样式"
        xiaowu:DescOn="默认" >   
    </com.matingting.mobilesafe.view.SettingItemClickView>
+   
+      <com.matingting.mobilesafe.view.SettingItemClickView
+       android:id="@+id/rl_SettingItem4"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       xiaowu:Title="设置来电提醒位置"
+       xiaowu:DescOn="默认" >   
+   </com.matingting.mobilesafe.view.SettingItemClickView>
+   
 </LinearLayout>

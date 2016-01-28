@@ -7,8 +7,6 @@ import com.matingting.mobilesafe.view.SettingItemClickView;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -23,6 +21,7 @@ public class SettingActivity extends Activity {
 	private SettingItemCheckView mRlItem1;
 	private SettingItemCheckView mRlItem2;
 	private SettingItemClickView mRlItem3;
+	private SettingItemClickView mRlItem4;
 	private final String[]  mAddressToastSytleItems=new String[] { "半透明", "活力橙", "卫士蓝", "金属灰", "苹果绿" };
 
 	@Override
@@ -112,6 +111,20 @@ public class SettingActivity extends Activity {
 				showAdressStyleChoicesDialog();
 			}
 		});
+		
+		mRlItem4=(SettingItemClickView) findViewById(R.id.rl_SettingItem4);
+		mRlItem4.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent=new Intent(SettingActivity.this, DragActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		
+		
 		
 	}
 	

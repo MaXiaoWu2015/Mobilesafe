@@ -15,8 +15,8 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
 
     <application
         android:allowBackup="true"
@@ -55,12 +55,14 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
-       <!-- <receiver android:name=".receiver.CallListenReceiver">  
+        <!--
+        <receiver android:name=".receiver.CallListenReceiver">  
         <intent-filter>  
                 <action android:name="android.intent.action.PHONE_STATE"/>  
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />  
         </intent-filter>  
-         </receiver> --> 
+         </receiver>
+        -->
         <activity
             android:name=".SecuritySettingCompletedActivity"
             android:label="@string/title_activity_security_setting_completed" >
@@ -68,7 +70,9 @@
 
         <service android:name=".service.LocationService" >
         </service>
-        <service android:name=".service.CallLstenService" ></service>
+        <service android:name=".service.CallLstenService" >
+        </service>
+
         <activity
             android:name=".AdvancedToolsActivity"
             android:label="@string/title_activity_advanced_tools" >
@@ -76,6 +80,10 @@
         <activity
             android:name=".AddressSearchActivity"
             android:label="@string/title_activity_address_search" >
+        </activity>
+        <activity
+            android:name=".DragActivity"
+            android:label="@string/title_activity_drag" >
         </activity>
     </application>
 
